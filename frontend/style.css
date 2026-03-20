@@ -256,15 +256,15 @@ h2 { font-size: 1.4rem; font-weight: 600; margin-bottom: 12px; color: #111827; }
 .post-meta { color: #9ca3af; font-size: 0.88rem; margin-bottom: 24px; }
 .back-link  { color: #6b7280; text-decoration: none; font-size: 0.88rem; }
 .back-link:hover { color: #111827; }
-.post-body  { line-height: 1.8; color: #374151; margin: 20px 0; }
+.post-body  { line-height: 1.8; color: #111827; margin: 20px 0; }
 
 /* ── Rich text content ────────────────────────────────────── */
 .post-body h1 { font-size: 1.8rem; margin: 20px 0 10px; color: #111827; }
 .post-body h2 { font-size: 1.4rem; margin: 18px 0 8px; color: #111827; }
 .post-body h3 { font-size: 1.2rem; margin: 16px 0 8px; color: #111827; }
-.post-body p  { margin-bottom: 12px; line-height: 1.8; }
-.post-body ul, .post-body ol { padding-left: 24px; margin-bottom: 12px; }
-.post-body li { margin-bottom: 6px; line-height: 1.7; }
+.post-body p  { margin-bottom: 12px; line-height: 1.8; color: #111827; }
+.post-body ul, .post-body ol { padding-left: 24px; margin-bottom: 12px; color: #111827; }
+.post-body li { margin-bottom: 6px; line-height: 1.7; color: #111827; }
 .post-body pre {
   background: #1e293b;
   border-radius: 8px;
