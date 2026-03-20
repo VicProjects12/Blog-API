@@ -12,43 +12,53 @@
     />
     <style>
       .ql-container {
-        background: rgba(255, 255, 255, 0.07);
-        border: 1px solid rgba(255, 255, 255, 0.12) !important;
-        border-radius: 0 0 10px 10px !important;
-        color: #e2e8f0;
+        background: var(--bg-card);
+        border: 1px solid var(--border) !important;
+        border-radius: 0 0 8px 8px !important;
+        color: var(--text);
         font-size: 1rem;
         min-height: 280px;
       }
       .ql-toolbar {
-        background: rgba(255, 255, 255, 0.05);
-        border: 1px solid rgba(255, 255, 255, 0.12) !important;
-        border-radius: 10px 10px 0 0 !important;
+        background: var(--bg-input);
+        border: 1px solid var(--border) !important;
+        border-radius: 8px 8px 0 0 !important;
       }
       .ql-toolbar .ql-stroke {
-        stroke: #94a3b8;
+        stroke: var(--text-sub);
       }
       .ql-toolbar .ql-fill {
-        fill: #94a3b8;
+        fill: var(--text-sub);
       }
       .ql-toolbar .ql-picker-label {
-        color: #94a3b8;
+        color: var(--text-sub);
       }
       .ql-toolbar button:hover .ql-stroke {
-        stroke: #e2e8f0;
+        stroke: var(--text);
+      }
+      .ql-toolbar button:hover .ql-fill {
+        fill: var(--text);
       }
       .ql-editor.ql-blank::before {
-        color: #64748b;
+        color: var(--text-muted);
         font-style: normal;
       }
       .ql-editor {
         min-height: 280px;
+        color: var(--text);
       }
-      /* Code block styling inside editor */
       .ql-editor pre {
         background: #1e293b;
         border-radius: 6px;
         color: #e2e8f0;
         padding: 12px;
+      }
+      .ql-picker-options {
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+      }
+      .ql-picker-item {
+        color: var(--text);
       }
     </style>
   </head>

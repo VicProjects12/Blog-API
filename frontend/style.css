@@ -161,7 +161,9 @@ h2 {
   margin-top: 8px;
   transition: background 0.2s;
 }
-.btn-primary:hover { background: var(--btn-hover); }
+.btn-primary:hover {
+  background: var(--btn-hover);
+}
 
 .btn-secondary {
   padding: 7px 16px;
@@ -406,10 +408,11 @@ h2 {
 }
 
 /* ── Rich text content ────────────────────────────────────── */
-.post-body h1 { 
-  font-size: 1.8rem; 
-  margin: 20px 0 10px; 
-  color: var(--text); }
+.post-body h1 {
+  font-size: 1.8rem;
+  margin: 20px 0 10px;
+  color: var(--text);
+}
 
 .post-body h2 {
   font-size: 1.4rem;
@@ -466,15 +469,6 @@ h2 {
   font-style: italic;
 }
 
-/* ── Quill editor overrides ───────────────────────────────── */
-.ql-container {
-  background: #ffffff !important;
-  border: 1px solid #e5e7eb !important;
-  border-radius: 0 0 8px 8px !important;
-  color: #111827 !important;
-  font-size: 0.95rem;
-  min-height: 280px;
-}
 .ql-toolbar {
   background: #f9fafb !important;
   border: 1px solid #e5e7eb !important;
