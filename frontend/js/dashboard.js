@@ -1,6 +1,6 @@
 requireAuth();
 
-const API = "http://localhost:5000/api";
+const API = "https://simpletechblog-production.up.railway.app/api";
 const user = getUser();
 
 // Welcome message
