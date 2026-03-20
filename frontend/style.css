@@ -401,41 +401,41 @@ h2 {
 }
 .post-body {
   line-height: 1.8;
-  color: #111827;
+  color: var(--text);
   margin: 20px 0;
 }
 
 /* ── Rich text content ────────────────────────────────────── */
-.post-body h1 {
-  font-size: 1.8rem;
-  margin: 20px 0 10px;
-  color: #111827;
-}
+.post-body h1 { 
+  font-size: 1.8rem; 
+  margin: 20px 0 10px; 
+  color: var(--text); }
+
 .post-body h2 {
   font-size: 1.4rem;
   margin: 18px 0 8px;
-  color: #111827;
+  color: var(--text);
 }
 .post-body h3 {
   font-size: 1.2rem;
   margin: 16px 0 8px;
-  color: #111827;
+  color: var(--text);
 }
 .post-body p {
   margin-bottom: 12px;
   line-height: 1.8;
-  color: #111827;
+  color: var(--text);
 }
 .post-body ul,
 .post-body ol {
   padding-left: 24px;
   margin-bottom: 12px;
-  color: #111827;
+  color: var(--text);
 }
 .post-body li {
   margin-bottom: 6px;
   line-height: 1.7;
-  color: #111827;
+  color: var(--text);
 }
 .post-body pre {
   background: #1e293b;
@@ -521,4 +521,30 @@ h2 {
 #themeToggle:hover {
   background: var(--bg-input);
   color: var(--text);
+}
+
+/* Force post body text to follow theme in dark mode */
+[data-theme="dark"] .post-body,
+[data-theme="dark"] .post-body p,
+[data-theme="dark"] .post-body h1,
+[data-theme="dark"] .post-body h2,
+[data-theme="dark"] .post-body h3,
+[data-theme="dark"] .post-body li,
+[data-theme="dark"] .post-body span,
+[data-theme="dark"] .post-body strong,
+[data-theme="dark"] .post-body em {
+  color: #f1f5f9 !important;
+}
+
+[data-theme="dark"] .post-card h2,
+[data-theme="dark"] .post-card p,
+[data-theme="dark"] .post-card .meta,
+[data-theme="dark"] .dashboard-card .post-info h3,
+[data-theme="dark"] .dashboard-card .post-info p,
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] .subtitle,
+[data-theme="dark"] .post-meta,
+[data-theme="dark"] .back-link {
+  color: #f1f5f9 !important;
 }
