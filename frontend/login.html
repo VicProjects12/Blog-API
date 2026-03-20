@@ -1,103 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login — Blog</title>
+    <title>Login — Simple Tech Blog</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="login-container">
-      <div class="login-card">
-        <div class="login-header">
-          <h2>Welcome!!</h2>
-          <p>Sign in to your account</p>
-        </div>
-
-        <!-- ✅ CHANGED: replaced emailError/passwordError spans with single errorMsg div -->
-        <div id="errorMsg" class="error-msg hidden"></div>
-
-        <div class="form-group">
-          <div class="input-wrapper">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Email"
-              required
-            />
-            <label for="email">Email Address</label>
-            <span class="focus-border"></span>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <div class="input-wrapper password-wrapper">
-            <input
-              type="password"
-              id="password"
-              name="password"
-              required
-              autocomplete="current-password"
-            />
-            <label for="password">Password</label>
-            <button
-              type="button"
-              class="password-toggle"
-              id="passwordToggle"
-              aria-label="Toggle password visibility"
-            >
-              <span class="eye-icon"></span>
-            </button>
-            <span class="focus-border"></span>
-          </div>
-        </div>
-
-        <div class="form-option">
-          <label class="remember-wrapper">
-            <input type="checkbox" name="remember" id="remember" />
-            <span checkbox-label>
-              <span class="checkmark"></span>
-              Remember me
-            </span>
-          </label>
-          <a href="#" class="forgot-password">Forgot Password?</a>
-        </div>
-
-        <!-- ✅ CHANGED: was a form submit button, now a plain button with id="loginBtn" -->
-        <button type="button" id="loginBtn" class="login-btn btn">
-          <span class="btn-text">Sign In</span>
-          <span class="btn-loader"></span>
-        </button>
-
-        <div class="divider">
-          <span>or continue with</span>
-        </div>
-
-        <div class="social-login">
-          <button type="button" class="social-btn google-btn">
-            <span class="social-icon google-icon"></span>
-            Google
-          </button>
-          <button type="button" class="social-btn github-btn">
-            <span class="social-icon github-icon"></span>
-            GitHub
-          </button>
-        </div>
-
-        <div class="signup-link">
-          <p>Don't have an account? <a href="register.html">Sign up</a></p>
-        </div>
-
-        <div class="success-message" id="successMessage">
-          <div class="success-icon">✓</div>
-          <h3>Login Successful!</h3>
-          <p>Redirecting to your dashboard...</p>
-        </div>
+    <nav class="navbar">
+      <a class="logo" href="index.html">Simple Tech Blog</a>
+      <div class="nav-links">
+        <a href="register.html">Sign Up</a>
       </div>
+    </nav>
+
+    <div class="glass-container">
+      <h1>Welcome Back</h1>
+      <p class="subtitle">Sign in to your account</p>
+
+      <div id="errorMsg" class="error-msg hidden"></div>
+
+      <div class="form-group">
+        <input
+          type="email"
+          id="email"
+          placeholder="Email address"
+          autocomplete="email"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="password"
+          id="password"
+          placeholder="Password"
+          autocomplete="current-password"
+        />
+      </div>
+
+      <button id="loginBtn" class="btn-primary">Sign In</button>
+
+      <p class="switch-link">
+        No account? <a href="register.html">Register</a>
+      </p>
     </div>
 
-    <!-- ✅ CHANGED: auth.js loads first so redirectIfLoggedIn() is available -->
     <script src="js/auth.js"></script>
     <script src="js/login.js"></script>
   </body>
